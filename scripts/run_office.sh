@@ -1,6 +1,6 @@
 #!/bin/bash
 cd ../reward_machines
-for i in `seq 0 9`; # 59 
+for i in `seq 0 19`; # 59 
 do
 	# Multi-task
 	# python run.py --alg=qlearning --env=Office-v0 --num_timesteps=1e5 --gamma=0.9 --log_path=../my_results/ql/office/M1/$i
