@@ -17,7 +17,7 @@ from importlib import import_module
 
 # Importing our environments and auxiliary functions
 import envs
-from envs.water.water_world import Ball, BallAgent
+# from envs.water.water_world import Ball, BallAgent
 from reward_machines.rm_environment import RewardMachineWrapper
 from cmd_util import make_vec_env, make_env, common_arg_parser
 
