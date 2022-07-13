@@ -17,7 +17,7 @@ for plot_index in range(len(algorithms)):
     df_last['mean'] = df_last.mean(axis = 1)
     df_last['std'] = df_last.std(axis = 1)
     df_last['x'] = pd.DataFrame(data=steps)
-    print(df_last)
+    # print(df_last)
 
     plt.plot(df_last['x'], df_last['mean'], label=algorithms[plot_index])
     plt.fill_between(df_last['x'], df_last['mean'] + df_last['std'], df_last['mean'] - df_last['std'], alpha=0.2)
