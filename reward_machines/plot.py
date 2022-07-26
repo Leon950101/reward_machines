@@ -5,7 +5,7 @@ algorithms = ['hrm', 'hrm-rs', 'hrm-rs-wpk', 'hrm-wpk' ] # ['crm', 'crm-rs', 'hr
 # plot_index = 4
 for plot_index in range(len(algorithms)):
     for i in range(10):
-        df = pd.read_csv('../my_results_pk/' + algorithms[plot_index] +'/office-single/M1/' + str(i) + '/progress.csv')
+        df = pd.read_csv('../../results/my_results_pk/' + algorithms[plot_index] +'/office-single/M1/' + str(i) + '/progress.csv')
         df = df[{'steps', 'total reward'}]
         df.rename(columns = {'total reward':str(i)}, inplace = True)
         if i == 0:
