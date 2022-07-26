@@ -6,4 +6,4 @@ def grid_environment():
         epsilon=0.1,
         q_init=2.0,
         hrm_lr=0.5,
-        print_freq=2000)
+        print_freq=10000)
