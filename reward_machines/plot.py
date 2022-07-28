@@ -2,7 +2,6 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 algorithms = ['hrm', 'hrm-rs', 'hrm-rs-wpk', 'hrm-wpk' ] # ['crm', 'crm-rs', 'hrm', 'hrm-rs', 'ql', 'ql-rs'] # 
-# plot_index = 4
 for plot_index in range(len(algorithms)):
     for i in range(10):
         df = pd.read_csv('../../results/my_results_pk/' + algorithms[plot_index] +'/office-single/M1/' + str(i) + '/progress.csv')
@@ -24,6 +23,3 @@ for plot_index in range(len(algorithms)):
 
 plt.legend()
 plt.show()
-
-# fig, ax = plt.subplots()
-# ax.set_title(algorithms[plot_index])
