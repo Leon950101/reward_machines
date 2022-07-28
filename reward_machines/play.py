@@ -2,14 +2,11 @@
 This code allows to manually play our environments
 """
 import envs, gym, argparse
-from envs.water.water_world import Ball, BallAgent
 
 if __name__ == '__main__':
 
     # Examples
-    # >>> python3 play.py --env Office-v0
-    # >>> python3 play.py --env Craft-M0-v0
-    # >>> python3 play.py --env Water-M0-v0
+    # >>> python play.py --env Office-single-v0
 
     # Getting params
     parser = argparse.ArgumentParser(prog="play", description='This code allows to manually play our environments.')
