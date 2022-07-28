@@ -115,13 +115,13 @@ class GridRMEnv(RewardMachineEnv):
 
 class OfficeRMEnv(GridRMEnv):
     def __init__(self):
-        rm_files = ["./envs/grids/reward_machines/office/t%d.txt"%i for i in range(1,5)]
+        rm_files = ["./envs/grids/office/t%d.txt"%i for i in range(1,5)]
         env = OfficeWorld()
         super().__init__(GridEnv(env),rm_files)
 
 class OfficeRM3Env(GridRMEnv):
     def __init__(self):
-        rm_files = ["./envs/grids/reward_machines/office/t3.txt"]
+        rm_files = ["./envs/grids/office/t3.txt"]
         env = OfficeWorld()
         super().__init__(GridEnv(env),rm_files)
 
