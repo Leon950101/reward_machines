@@ -112,10 +112,10 @@ class GridRMEnv(RewardMachineEnv):
 
         return [sum(arps)/len(arps) for arps in optimal_ARPS]
 
-
+# It used to be multi-task, now I use it for changed finite state machine (add bad terminations)
 class OfficeRMEnv(GridRMEnv):
     def __init__(self):
-        rm_files = ["./envs/grids/office/t%d.txt"%i for i in range(1,5)]
+        rm_files = ["./envs/grids/office/t5.txt"] # "./envs/grids/office/t%d.txt"%i for i in range(1,5)
         env = OfficeWorld()
         super().__init__(GridEnv(env),rm_files)
 
@@ -125,3 +125,4 @@ class OfficeRM3Env(GridRMEnv):
         env = OfficeWorld()
         super().__init__(GridEnv(env),rm_files)
 
+        
