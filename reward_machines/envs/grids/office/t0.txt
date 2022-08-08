@@ -8,7 +8,7 @@
 (3,3,'!e&!n',ConstantRewardFunction(0))
 (3,4,'e&!n',ConstantRewardFunction(0.5))
 (4,1,'g&!n',ConstantRewardFunction(1))
-(4,4,'!g&n',ConstantRewardFunction(0))
+(4,4,'!g&!n',ConstantRewardFunction(0))
 (0,5,'!e&!f&n',ConstantRewardFunction(-0.1))
 (2,5,'!f&n',ConstantRewardFunction(-0.1))
 (3,5,'f&n',ConstantRewardFunction(-0.1))

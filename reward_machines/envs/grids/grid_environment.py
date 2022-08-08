@@ -115,13 +115,14 @@ class GridRMEnv(RewardMachineEnv):
 # It used to be multi-task, now I use it for changed finite state machine (add bad terminations)
 class OfficeRMEnv(GridRMEnv):
     def __init__(self):
-        rm_files = ["./envs/grids/office/t5.txt"] # "./envs/grids/office/t%d.txt"%i for i in range(1,5)
+        rm_files = ["./envs/grids/office/t0.txt"] # "./envs/grids/office/t%d.txt"%i for i in range(1,5)
         env = OfficeWorld()
         super().__init__(GridEnv(env),rm_files)
 
+# Original Office-single-vo task (Task 3 before)
 class OfficeRM3Env(GridRMEnv):
     def __init__(self):
-        rm_files = ["./envs/grids/office/t3.txt"]
+        rm_files = ["./envs/grids/office/t1.txt"]
         env = OfficeWorld()
         super().__init__(GridEnv(env),rm_files)
 
