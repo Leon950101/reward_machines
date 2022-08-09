@@ -111,7 +111,7 @@ class OfficeWorld:
         self.objects[(10,7)] = "c"
         self.objects[(10,1)] = "d"
         self.objects[(7,4)] = "e"  # MAIL
-        self.objects[(8,2)] = "f"  # COFFEE
+        self.objects[(8,2)] = "f"  # COFFEE # This one will cause sub-optimal in HRM
         self.objects[(3,6)] = "f"  # COFFEE
         self.objects[(4,4)] = "g"  # OFFICE
         self.objects[(4,1)] = "n"  # PLANT

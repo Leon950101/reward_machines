@@ -1,10 +1,10 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-algorithms = ['hrm', 'hrm-bt-rs', 'hrm-rs', 'hrm-rs-bt-rs', 'hrm-rs-wpk', 'hrm-wpk' ] # ['crm', 'crm-rs', 'hrm', 'hrm-rs', 'ql', 'ql-rs'] # 
+algorithms = ['crm', 'crm-rs', 'hrm', 'hrm-rs', 'hrm-rs-wpk', 'hrm-wpk', 'ql'] 
 for plot_index in range(len(algorithms)):
     for i in range(10):
-        df = pd.read_csv('../../results/my_results_bt_rs/' + algorithms[plot_index] +'/office-single/M1/' + str(i) + '/progress.csv')
+        df = pd.read_csv('../../results/my_results_pk_fs/' + algorithms[plot_index] +'/office-single/M1/' + str(i) + '/progress.csv')
         df = df[{'steps', 'total reward'}]
         df.rename(columns = {'total reward':str(i)}, inplace = True)
         if i == 0:
