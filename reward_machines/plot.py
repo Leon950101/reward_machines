@@ -1,7 +1,7 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-algorithms = ['crm', 'hrm', 'hrm-fs', 'ql']
+algorithms = ['crm', 'hrm', 'hrm-fs', 'hrm-fs_2', 'ql']
 settingname = 'my_results_fs'
 for plot_index in range(len(algorithms)):
     for i in range(10):

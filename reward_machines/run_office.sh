@@ -16,6 +16,6 @@ do
 	# python run.py --alg=hrm --env=Office-v0 --num_timesteps=1e5 --gamma=0.9 --log_path=../../results/my_results_pk/hrm-bt/office-single/M1/$i
 	# python run.py --alg=hrm --env=Office-v0 --num_timesteps=1e5 --gamma=0.9 --use_self_loops --log_path=../../results/my_results_pk/hrm-sl-bt/office-single/M1/$i
 	# python run.py --alg=hrm --env=Office-v0 --num_timesteps=1e5 --gamma=0.9 --log_path=../../results/my_results_pk/hrm-bt-rh/office-single/M1/$i
-	python run.py --alg=hrm --env=Office-single-v0 --num_timesteps=1e5 --gamma=0.9 --log_path=../../results/my_results_fs/hrm-fs/office-single/M1/$i
+	python run.py --alg=hrm --env=Office-v0 --num_timesteps=1e5 --gamma=0.9 --log_path=../../results/my_results_fs/hrm-fs_2/office-single/M1/$i
 
 done
